@@ -1,0 +1,14 @@
+name: bayesian-modelling-tutorial
+channels:
+- defaults
+- conda-forge
+- ericmjl
+dependencies:
+- python=3.6
+- jupyter
+- pymc3
+- seaborn
+- matplotlib
+- numpy
+- scipy
+- pandas
