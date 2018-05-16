@@ -12,3 +12,5 @@ dependencies:
 - numpy
 - scipy
 - pandas
+- jupyterlab
+- tqdm
