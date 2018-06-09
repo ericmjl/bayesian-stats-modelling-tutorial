@@ -3,9 +3,9 @@ How to do Bayesian statistical modelling using numpy and PyMC3
 
 # getting started
 
-To get started, first identify whether you 
+To get started, first identify whether you:
 
-1. Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python), or if you 
+1. Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python), or if you
 2. prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or if you
 3. Do not want to mess around with dev-ops.
 
