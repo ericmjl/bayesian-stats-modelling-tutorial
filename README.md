@@ -9,7 +9,23 @@ To get started, first identify whether you:
 2. prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or if you
 3. Do not want to mess around with dev-ops.
 
-## `conda` users
+## 1. Clone the repository locally
+
+In your terminal, use `git` to clone the repository locally.
+
+```bash
+git clone https://github.com/ericmjl/bayesian-stats-modelling-tutorial
+```
+
+Alternatively, you can download the zip file of the repository at the top of the main page of the repository. If you prefer not to use git or don't have experience with it, this a good option.
+
+## 2. Download Anaconda (if you haven't already)
+
+If you do not already have the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3, go get it (note: you can also set up your project environment w/out Anaconda using `pip` to install the required packages; however Anaconda is great for Data Science and we encourage you to use it).
+
+## 3. Set up your environment
+
+### 3a. `conda` users
 
 If this is the first time you're setting up your compute environment, use the `conda` package manager to **install all the necessary packages** from the provided `environment.yml` file.
 
@@ -35,11 +51,15 @@ To **update the environment** based on the `environment.yml` specification file,
 conda env update -f environment.yml
 ```
 
-## `pipenv` users
+### 3b. `pip` users
 
-Instructions are coming.
+Please install all of the packages listed in the `environment.yml` file manually. An example command would be:
 
-## don't want to mess with dev-ops
+```bash
+$ pip install numpy scipy networkx ...
+```
+
+### 3c. don't want to mess with dev-ops
 
 If you don't want to mess around with dev-ops, click the following badge to get a Binder session on which you can compute and write code.
 
