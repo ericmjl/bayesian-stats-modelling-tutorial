@@ -1,3 +1,8 @@
+# IMPORTANT
+
+**If you're attending this workshop at SciPy, 2018, make sure to clone, download, or re-pull this repository on the morning of Tuesday July 10, 2018. All edits will be completed by end of day CT Monday July 09.**
+
+
 # bayesian-stats-modelling-tutorial
 How to do Bayesian statistical modelling using numpy and PyMC3
 
