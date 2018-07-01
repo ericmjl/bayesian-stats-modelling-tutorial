@@ -15,4 +15,4 @@ dependencies:
 - jupyterlab
 - tqdm
 - missingno
-
+- pyjanitor
