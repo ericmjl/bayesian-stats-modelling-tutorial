@@ -72,4 +72,11 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 # data credits
 
-- [Baseball dataset](http://www.seanlahman.com/baseball-archive/statistics/)
+Please see individual notebooks for dataset attribution.
+
+# Further Reading
+
+Further reading resources that are not specifically tied to any notebooks.
+
+- [Visualization in Bayesian workflow](https://arxiv.org/abs/1709.01449)
+- [PyMC3 examples gallery](http://docs.pymc.io/examples.html)
