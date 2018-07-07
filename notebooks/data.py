@@ -44,3 +44,9 @@ def load_sterilization():
     df = jn.DataFrame(df).clean_names().label_encode('treatment')
     mapping = dict(zip(df['treatment'], df['treatment_enc']))
     return df, mapping
+
+
+def load_kruschke():
+    df = pd.read_csv('../data/iq.csv', index_col=0)  # comment out the path to the file for students.
+    df = jn.DataFrame(df).label_encode('treatment')
+    return df
