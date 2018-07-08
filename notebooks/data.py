@@ -55,8 +55,8 @@ def load_kruschke():
 
 # Constants for load_decay
 tau = 71.9 # indium decay half life
-A = 60  # starting magnitude
-C = 2 # measurement error
+A = 42  # starting magnitude
+C = 21 # measurement error
 noise_scale = 1
 
 
