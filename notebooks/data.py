@@ -8,6 +8,7 @@ def load_finches_2012():
     path = '../data/finch_beaks_2012.csv'
     return load_finches(path)
 
+
 def load_finches_1975():
     path = '../data/finch_beaks_1975.csv'
     return load_finches(path)
@@ -49,4 +50,21 @@ def load_sterilization():
 def load_kruschke():
     df = pd.read_csv('../data/iq.csv', index_col=0)  # comment out the path to the file for students.
     df = jn.DataFrame(df).label_encode('treatment')
+    return df
+
+
+# Constants for load_decay
+tau = 71.9 # indium decay half life
+A = 60  # starting magnitude
+C = 2 # measurement error
+noise_scale = 1
+
+
+def load_decay():
+    t = np.arange(0, 1000)
+    def decay_func(ts, noise):
+        return A  * np.exp(-t/tau) + C + np.random.normal(0, noise, size=(len(t)))
+
+    data = {'t': t, 'activity': decay_func(t, noise_scale)}
+    df = pd.DataFrame(data)
     return df
