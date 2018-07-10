@@ -43,13 +43,13 @@ conda env create -f environment.yml
 To **activate the environment**, use the `conda activate` command.
 
 ```bash
-conda activate bayesian-stats-modelling
+conda activate bayesian-modelling-tutorial
 ```
 
 **If you get an error activating the environment**, use the older `source activate` command.
 
 ```bash
-source activate bayesian-stats-modelling
+source activate bayesian-modelling-tutorial
 ```
 
 To **update the environment** based on the `environment.yml` specification file, use the `conda update` command.
