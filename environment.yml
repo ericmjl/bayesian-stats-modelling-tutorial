@@ -16,5 +16,6 @@ dependencies:
 - tqdm
 - missingno
 - scikit-learn
+- cython
 - pip:
   - pyjanitor
