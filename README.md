@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
+  
 # IMPORTANT
 
 **If you're attending this workshop at SciPy, 2018, make sure to clone, download, or re-pull this repository on the morning of Tuesday July 10, 2018. All edits will be completed by end of day CT Monday July 09.**
