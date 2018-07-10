@@ -14,3 +14,7 @@ dependencies:
 - pandas
 - jupyterlab
 - tqdm
+- missingno
+- scikit-learn
+- pip:
+  - pyjanitor
