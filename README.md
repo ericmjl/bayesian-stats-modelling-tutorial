@@ -61,7 +61,7 @@ conda env update -f environment.yml
 Please install all of the packages listed in the `environment.yml` file manually. An example command would be:
 
 ```bash
-$ pip install numpy scipy networkx ...
+pip install networkx scipy ...
 ```
 
 ### 3c. don't want to mess with dev-ops
