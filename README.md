@@ -73,7 +73,7 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 # Acknowledgements
 
-Devlopment of this type of material is almost always a result of years of discussions between members of a community. We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: Michael Betancourt, Justin Bois, Allen Downey, Chris Fonnesbeck, Jake VanderPlas. Also, Andrew Gelman rocks!
+Development of this type of material is almost always a result of years of discussions between members of a community. We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: Michael Betancourt, Justin Bois, Allen Downey, Chris Fonnesbeck, Jake VanderPlas. Also, Andrew Gelman rocks!
 
 # data credits
 
