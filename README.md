@@ -70,6 +70,11 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
 
+
+# Acknowledgements
+
+Devlopment of this type of material is almost always a result of years of discussions between members of a community. We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: Michael Betancourt, Justin Bois, Allen Downey, Chris Fonnesbeck, Jake VanderPlas. Also, Andrew Gelman rocks!
+
 # data credits
 
 Please see individual notebooks for dataset attribution.
@@ -80,3 +85,5 @@ Further reading resources that are not specifically tied to any notebooks.
 
 - [Visualization in Bayesian workflow](https://arxiv.org/abs/1709.01449)
 - [PyMC3 examples gallery](http://docs.pymc.io/examples.html)
+
+
