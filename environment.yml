@@ -17,5 +17,6 @@ dependencies:
 - missingno
 - scikit-learn
 - cython
+- nodejs
 - pip:
   - pyjanitor
