@@ -81,11 +81,10 @@ Development of this type of material is almost always a result of years of discu
 
 Please see individual notebooks for dataset attribution.
 
-# Further Reading
+# Further Reading & Resources
 
 Further reading resources that are not specifically tied to any notebooks.
 
 - [Visualization in Bayesian workflow](https://arxiv.org/abs/1709.01449)
 - [PyMC3 examples gallery](http://docs.pymc.io/examples.html)
-
-
+- [Bayesian Analysis Recipes](https://github.com/ericmjl/bayesian-analysis-recipes)
