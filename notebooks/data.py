@@ -11,7 +11,9 @@ def load_finches_2012():
 
 def load_finches_1975():
     path = '../data/finch_beaks_1975.csv'
-    return load_finches(path)
+    df = load_finches(path)
+    df = df.rename_column('beak_length_mm', 'beak_length').rename_column('beak_depth_mm', 'beak_depth')
+    return df
 
 
 def load_finches(path):
