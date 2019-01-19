@@ -20,3 +20,4 @@ dependencies:
 - nodejs
 - pip:
   - pyjanitor
+  - arviz
