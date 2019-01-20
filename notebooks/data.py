@@ -18,12 +18,13 @@ def load_finches_1975():
 
 def load_finches(path):
     # Load the data
-    df = (pd.read_csv(path)
-          .clean_names()    # clean column names
-          .rename_column('blength', 'beak_length')  # rename blength to beak_length (readability fix)
-          .rename_column('bdepth', 'beak_depth')   # rename bdepth to beak_depth (readability fix)
-          .label_encode('species')  # create a `species_enc` column that has the species encoded numerically
-         )
+    df = (
+        pd.read_csv(path)
+        .clean_names()    # clean column names
+        .rename_column('blength', 'beak_length')  # rename blength to beak_length (readability fix)
+        .rename_column('bdepth', 'beak_depth')   # rename bdepth to beak_depth (readability fix)
+        .label_encode('species')  # create a `species_enc` column that has the species encoded numerically
+    )
     return df
 
 
