@@ -1,0 +1,56 @@
+# This is necessary because matplotlib is involved.
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+- sleep 5 # give xvfb some time to start
+
+language: python
+matrix:
+  include:
+    - python: 3.5  # we don't actually use this
+      env: PYTHON_VERSION=3.6
+    - python: 3.5  # we don't actually use this
+      env: PYTHON_VERSION=3.7
+# command to install dependencies
+install:
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/anaconda
+  - export PATH="$HOME/anaconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  - conda config --add channels conda-forge
+
+  # Useful for debugging any issues with conda
+  - conda info -a
+
+  # Install Python, py.test, and required packages.
+  - conda env create -f environment.yml
+  - source activate bayesian-modelling-tutorial
+  # This guarantees that the Python version is matrixed.
+  - conda install python=$PYTHON_VERSION
+  - python -m ipykernel install --user --name bayesian-modelling-tutorial
+# command to run tests
+script:
+  - mkdir -p docs/notebooks
+  # All notebooks that need to be converted are inside nbconvert_config.py
+  # We have to call on --execute - without doing so, the execution config
+  # inside nbconvert_config.py won't run.
+  - jupyter nbconvert --config nbconvert_config.py --execute --template full
+  # Build the index page.
+  - pandoc README.md -o docs/index.html -c static/pandoc.css -s
+
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  # We read the master branch
+  on:
+    branch: master
+  # Take the docs/ directory
+  local-dir: docs
+  # Publish to the gh-pages branch
+  target-branch: gh-pages
+verbose: true
