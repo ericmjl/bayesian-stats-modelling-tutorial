@@ -4,7 +4,7 @@ channels:
 - conda-forge
 - ericmjl
 dependencies:
-- python=3.6
+- python=3.7
 - jupyter
 - pymc3
 - seaborn
@@ -18,6 +18,9 @@ dependencies:
 - scikit-learn
 - cython
 - nodejs
+- pyjanitor
+- xarray
+- pandoc
+- black
 - pip:
-  - pyjanitor
   - arviz
