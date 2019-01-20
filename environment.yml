@@ -22,5 +22,6 @@ dependencies:
 - xarray
 - pandoc
 - black
+- nbstripout
 - pip:
   - arviz
