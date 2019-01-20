@@ -18,11 +18,7 @@ def load_finches_1975():
 
 def load_finches(path):
     # Load the data
-    df = pd.read_csv(path)
-
-    # Data cleaning methods. This is provided for you. Follow along the annotations
-    # to learn what's going on.
-    df = (jn.DataFrame(df)  # wrap dataframe in a Janitor dataframe.
+    df = (pd.read_csv(path)
           .clean_names()    # clean column names
           .rename_column('blength', 'beak_length')  # rename blength to beak_length (readability fix)
           .rename_column('bdepth', 'beak_depth')   # rename bdepth to beak_depth (readability fix)
@@ -43,15 +39,20 @@ def load_baseball():
 
 
 def load_sterilization():
-    df = pd.read_csv('../data/sterilization.csv', na_filter=True, na_values=['#DIV/0!'])
-    df = jn.DataFrame(df).clean_names().label_encode('treatment')
+    df = (
+        pd.read_csv('../data/sterilization.csv', na_filter=True, na_values=['#DIV/0!'])
+        .clean_names()
+        .label_encode('treatment')
+    )
     mapping = dict(zip(df['treatment'], df['treatment_enc']))
     return df, mapping
 
 
 def load_kruschke():
-    df = pd.read_csv('../data/iq.csv', index_col=0)  # comment out the path to the file for students.
-    df = jn.DataFrame(df).label_encode('treatment')
+    df = (
+        pd.read_csv('../data/iq.csv', index_col=0)  # comment out the path to the file for students.
+        .label_encode('treatment')
+    )
     return df
 
 
