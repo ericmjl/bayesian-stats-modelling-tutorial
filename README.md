@@ -81,7 +81,7 @@ Part 1: Bayesian Data Science by Simulation
 Part 2: Bayesian Data Science by Probabilistic Programming
 
 - [Two Group Comparisons: Drug effect on IQ](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/03-instructor-two-group-iq.html)
-- [Multi-Group Comparisons: Multiple ways of sterilizing phones](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/04-instructor-multi-group-comparison-sterilization.html)
+- [Multi-Group Comparisons: Multiple ways of sterilizing phones](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/04-instructor-multi-group-comparsion-sterilization.html)
 - [Two Group Comparisons: Darwin's Finches](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/05-instructor-two-group-comparison-finches.html)
 - [Hierarchical Modelling: Baseball](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/06-instructor-hierarchical-baseball.html)
 - [Hierarchical Modelling: Darwin's Finches](https://ericmjl.github.io/bayesian-stats-modelling-tutorial/notebooks/07-instructor-hierarchical-finches.html)
