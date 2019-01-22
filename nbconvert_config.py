@@ -57,7 +57,7 @@ import os
 c.NbConvertApp.notebooks = [
     "notebooks/*-instructor-*.ipynb",
     "notebooks/*-Instructor-*.ipynb",
-    "notebooks/08-bayesian-curve-regression.ipynb"
+    "notebooks/08-bayesian-curve-regression.ipynb",
     "notebooks/*bonus*.ipynb",
 ]
 
