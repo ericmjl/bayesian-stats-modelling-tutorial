@@ -23,5 +23,6 @@ dependencies:
 - pandoc
 - black
 - nbstripout
+- pylint
 - pip:
   - arviz
