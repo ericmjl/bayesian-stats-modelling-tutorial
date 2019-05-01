@@ -69,7 +69,31 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
 
-## 4. want to view static HTML notebooks
+
+### 4a. Open your Jupyter notebook
+
+In the terminal, execute `jupyter notebook`.
+
+Navigate to the notebooks directory and open the notebook 01-Student-Probability_a_simulated_introduction.ipynb.
+
+### 4b. Open your Jupyter notebook in Jupyter Lab!
+
+
+In the terminal, execute `jupyter lab`.
+
+Navigate to the notebooks directory and open the notebook 01-Student-Probability_a_simulated_introduction.ipynb.
+
+Now, if you're using Jupyter lab, for Notebook 2, you'll need to get ipywidgets working. The documentation is [here](https://ipywidgets.readthedocs.io/en/latest/user_install.html#installing-the-jupyterlab-extension).
+
+In short, you'll need node installed & you'll need to run the following in your terminal:
+
+`jupyter labextension install @jupyter-widgets/jupyterlab-manager`
+
+### 4c. Open your Jupyter notebook using Binder.
+
+Launch Binder using the button at the top of this README.md. Voila!
+
+### 4d. Want to view static HTML notebooks
 
 If you're interested in only viewing the static HTML versions of the notebooks, the links are provided below:
 
