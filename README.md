@@ -116,6 +116,10 @@ Part 2: Bayesian Data Science by Probabilistic Programming
 
 Development of this type of material is almost always a result of years of discussions between members of a community. We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: Michael Betancourt, Justin Bois, Allen Downey, Chris Fonnesbeck, Jake VanderPlas. Also, Andrew Gelman rocks!
 
+# Feedback
+
+Please leave feedback for us [here](https://ericma1.typeform.com/to/j88n8P)! We'll use this information to help improve the teaching and delivery of the material.
+
 # data credits
 
 Please see individual notebooks for dataset attribution.
