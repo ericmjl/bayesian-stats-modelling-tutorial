@@ -33,6 +33,7 @@ steps:
 - script: |
     wget $(miniconda.url) -O miniconda.sh
     bash miniconda.sh -b -p $HOME/anaconda
+    export PATH="$HOME/anaconda/bin:$PATH"
     conda config --set always_yes yes --set changeps1 no
     conda update -q conda
     conda config --add channels conda-forge
