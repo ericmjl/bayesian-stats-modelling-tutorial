@@ -26,5 +26,6 @@ dependencies:
 - nbstripout
 - pylint
 - theano>=1.0.4
+- ipykernel
 - pip:
   - arviz
