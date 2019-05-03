@@ -47,6 +47,7 @@ steps:
     python -m ipykernel install --user --name bayesian-modelling-tutorial
   displayName: 'Install dependencies'
 
+# Q: Does second script not recognize environment context from 1st script?
 - script: |
     source activate bayesian-modelling-tutorial
     mkdir -p docs/notebooks
