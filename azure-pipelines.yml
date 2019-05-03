@@ -42,7 +42,8 @@ steps:
     conda env create -f environment.yml
     source activate bayesian-modelling-tutorial
 
-    conda install python=$(python.version)
+    which conda
+    conda install python=$(python.version) jupyter pandoc
     python -m ipykernel install --user --name bayesian-modelling-tutorial
   displayName: 'Install dependencies'
 
