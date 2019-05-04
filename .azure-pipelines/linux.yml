@@ -22,14 +22,14 @@ steps:
 - script: |
     # Install Python, py.test, and required packages.
     conda env create -f environment.yml
-    conda activate bayesian-modelling-tutorial
+    source activate bayesian-modelling-tutorial
     conda install python=$(python.version)
     python -m ipykernel install --user --name bayesian-modelling-tutorial
   displayName: 'Create environment, install correct Python, and activate kernel.'
 
 # Q: Does second script not recognize environment context from 1st script?
 - script: |
-    conda activate bayesian-modelling-tutorial
+    source activate bayesian-modelling-tutorial
     mkdir -p docs/notebooks
     jupyter nbconvert --config nbconvert_config.py --execute --template full
     pandoc README.md -o docs/index.html -c static/pandoc.css -s
