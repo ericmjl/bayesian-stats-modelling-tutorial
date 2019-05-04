@@ -15,26 +15,21 @@ pool:
   vmImage: ubuntu-16.04
 
 steps:
-- script: |
-    wget $(miniconda.url) -O miniconda.sh
-    bash miniconda.sh -b -p $HOME/anaconda
-    export PATH="$HOME/anaconda/bin:$PATH"
-    conda config --set always_yes yes --set changeps1 no
-    conda update -q conda
-    conda config --add channels conda-forge
+# Add conda to PATH.
+- bash: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
 
+- script: |
     # Install Python, py.test, and required packages.
     conda env create -f environment.yml
-    source activate bayesian-modelling-tutorial
-
-    which conda
-    conda install python=$(python.version) jupyter pandoc
+    conda activate bayesian-modelling-tutorial
+    conda install python=$(python.version)
     python -m ipykernel install --user --name bayesian-modelling-tutorial
-  displayName: 'Install dependencies'
+  displayName: 'Create environment, install correct Python, and activate kernel.'
 
 # Q: Does second script not recognize environment context from 1st script?
 - script: |
-    source activate bayesian-modelling-tutorial
+    conda activate bayesian-modelling-tutorial
     mkdir -p docs/notebooks
     jupyter nbconvert --config nbconvert_config.py --execute --template full
     pandoc README.md -o docs/index.html -c static/pandoc.css -s
