@@ -26,5 +26,5 @@ jobs:
     pool:
       vmImage: ubuntu-16.04
     steps:
-      - template: templats/setup-script.yml
+      - template: templates/setup-script.yml
       - template: templates/nb-docs.yml
