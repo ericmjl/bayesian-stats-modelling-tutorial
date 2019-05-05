@@ -7,5 +7,6 @@ steps:
   displayName: 'Create environment, install correct Python, and activate kernel.'
 
 - script: |
+    source activate bayesian-modelling-tutorial
     conda list
   displayName: 'Display all packages, for diagnostic purposes.'
