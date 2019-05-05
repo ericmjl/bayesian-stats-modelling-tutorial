@@ -1,56 +1,20 @@
-# # Python package
-# # Create and test a Python package on multiple Python versions.
-# # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# # https://docs.microsoft.com/azure/devops/pipelines/languages/python
+jobs:
+  - job: macOS
+    strategy: templates/python-matrix.yml
+    variables:
+      miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+    pool:
+      vmImage: macOS-10.14
+    steps:
+      - template: templates/setup-script.yml
+      - template: templates/nb-docs.yml
 
-# trigger:
-# - master
-
-# strategy:
-#   matrix:
-#     macos:
-#       python.version: "3.7"
-#       image.name: "macOS-10.14"
-#       miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-#     linux:
-#       python.version: "3.7"
-#       image.name: "ubuntu-16.04"
-#       miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-#     # windows:
-#     #   python.version: "3.7"
-#     #   image.name: "windows-2019"
-#     #   miniconda.url:
-
-# pool:
-#   vmImage: $(image.name)
-
-# steps:
-# - task: UsePythonVersion@0
-#   inputs:
-#     versionSpec: '$(python.version)'
-#   displayName: 'Use Python $(python.version)'
-
-# - script: |
-#     wget $(miniconda.url) -O miniconda.sh
-#     bash miniconda.sh -b -p $HOME/anaconda
-#     export PATH="$HOME/anaconda/bin:$PATH"
-#     conda config --set always_yes yes --set changeps1 no
-#     conda update -q conda
-#     conda config --add channels conda-forge
-
-#     # Install Python, py.test, and required packages.
-#     conda env create -f environment.yml
-#     source activate bayesian-modelling-tutorial
-
-#     which conda
-#     conda install python=$(python.version) jupyter pandoc
-#     python -m ipykernel install --user --name bayesian-modelling-tutorial
-#   displayName: 'Install dependencies'
-
-# # Q: Does second script not recognize environment context from 1st script?
-# - script: |
-#     source activate bayesian-modelling-tutorial
-#     mkdir -p docs/notebooks
-#     jupyter nbconvert --config nbconvert_config.py --execute --template full
-#     pandoc README.md -o docs/index.html -c static/pandoc.css -s
-#   displayName: 'Build docs pages'
+  - job: linux
+    strategy: templates/python-matrix.yml
+    variables:
+      miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    pool:
+      vmImage: ubuntu-16.04
+    steps:
+      - template: templats/setup-script.yml
+      - template: templates/nb-docs.yml
