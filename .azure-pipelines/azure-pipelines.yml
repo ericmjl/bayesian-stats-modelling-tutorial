@@ -17,8 +17,7 @@ jobs:
       # We need to take ownership if we want to update conda or install packages globally
       - bash: sudo chown -R $USER $CONDA
         displayName: Take ownership of conda installation
-
-      - template: templates/setup-script.yml
+      - template: templates/setup-script-nix.yml
       - template: templates/nb-docs.yml
 
   - job: linux
@@ -35,7 +34,7 @@ jobs:
       - bash: echo "##vso[task.prependpath]$CONDA/bin"
         displayName: Add conda to PATH
 
-      - template: templates/setup-script.yml
+      - template: templates/setup-script-nix.yml
       - template: templates/nb-docs.yml
 
   - job: windows
@@ -52,5 +51,5 @@ jobs:
       - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
         displayName: Add conda to PATH
 
-      - template: templates/setup-script.yml
-      - template: templates/nb-docs.yml
+      - template: templates/setup-script-win.yml
+      - template: templates/nb-docs-win.yml

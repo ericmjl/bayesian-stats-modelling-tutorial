@@ -1,6 +1,0 @@
-strategy:
-  matrix:
-    py37:
-      python.version: "3.7"
-    py36:
-      python.version: "3.6"
