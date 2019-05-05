@@ -1,6 +1,11 @@
 jobs:
   - job: macOS
-    strategy: templates/python-matrix.yml
+    strategy:
+      matrix:
+        py37:
+          python.version: "3.7"
+        py36:
+          python.version: "3.6"
     variables:
       miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
     pool:
@@ -10,7 +15,12 @@ jobs:
       - template: templates/nb-docs.yml
 
   - job: linux
-    strategy: templates/python-matrix.yml
+    strategy:
+      matrix:
+        py37:
+          python.version: "3.7"
+        py36:
+          python.version: "3.6"
     variables:
       miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
     pool:
