@@ -1,0 +1,36 @@
+trigger:
+- master
+
+variables:
+  miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+strategy:
+  matrix:
+    py37:
+      python.version: "3.7"
+    py36:
+      python.version: "3.6"
+
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+# Add conda to PATH.
+- bash: echo "##vso[task.prependpath]$CONDA/bin"
+  displayName: Add conda to PATH
+
+- script: |
+    # Install Python, py.test, and required packages.
+    conda env create -f environment.yml
+    source activate bayesian-modelling-tutorial
+    conda install -y python=$(python.version)
+    python -m ipykernel install --user --name bayesian-modelling-tutorial
+  displayName: 'Create environment, install correct Python, and activate kernel.'
+
+# Q: Does second script not recognize environment context from 1st script?
+- script: |
+    source activate bayesian-modelling-tutorial
+    mkdir -p docs/notebooks
+    jupyter nbconvert --config nbconvert_config.py --execute --template full
+    pandoc README.md -o docs/index.html -c static/pandoc.css -s
+  displayName: 'Build docs pages'
