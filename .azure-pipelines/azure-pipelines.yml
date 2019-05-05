@@ -1,24 +1,21 @@
 jobs:
-  - job: macOS
-    strategy:
-      matrix:
-        py37:
-          python.version: "3.7"
-        py36:
-          python.version: "3.6"
+  - job: macpy37
     variables:
-      miniconda.url: https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+      python.version: "3.7"
     pool:
       vmImage: macOS-10.14
     steps:
-      # Add conda to bash
-      - bash: echo "##vso[task.prependpath]$CONDA/bin"
-        displayName: Add conda to PATH
+      - template: templates/conda-mac.yml
+      - template: templates/setup-script.yml
+      - template: templates/nb-docs.yml
 
-      # On Hosted macOS, the agent user doesn't have ownership of Miniconda's installation directory/
-      # We need to take ownership if we want to update conda or install packages globally
-      - bash: sudo chown -R $USER $CONDA
-        displayName: Take ownership of conda installation
+  - job: macpy36
+    variables:
+      python.version: "3.6"
+    pool:
+      vmImage: macOS-10.14
+    steps:
+      - template: templates/conda-mac.yml
       - template: templates/setup-script.yml
       - template: templates/nb-docs.yml
 
@@ -34,6 +31,7 @@ jobs:
     pool:
       vmImage: ubuntu-16.04
     steps:
+      # https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/anaconda?view=azure-devops&tabs=ubuntu-16-04
       - bash: echo "##vso[task.prependpath]$CONDA/bin"
         displayName: Add conda to PATH
       - template: templates/setup-script.yml
