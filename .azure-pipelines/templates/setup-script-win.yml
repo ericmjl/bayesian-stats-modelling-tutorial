@@ -5,3 +5,7 @@ steps:
     conda install -y python=$(python.version)
     python -m ipykernel install --user --name bayesian-modelling-tutorial
   displayName: 'Create environment, install correct Python, and activate kernel.'
+
+- script: |
+    conda list
+  displayName: 'Display all packages, for diagnostic purposes.'
