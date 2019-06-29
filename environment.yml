@@ -7,6 +7,7 @@ dependencies:
 - python=3.7
 - jupyter
 - pymc3
+- pip
 - seaborn
 - matplotlib
 - numpy
@@ -25,3 +26,5 @@ dependencies:
 - nbstripout
 - pylint
 - arviz
+- theano>=1.0.4
+- ipykernel
