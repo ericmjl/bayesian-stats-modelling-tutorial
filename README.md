@@ -21,17 +21,24 @@ In your terminal, use `git` to clone the repository locally.
 git clone https://github.com/ericmjl/bayesian-stats-modelling-tutorial
 ```
 
-Alternatively, you can download the zip file of the repository at the top of the main page of the repository. If you prefer not to use git or don't have experience with it, this a good option.
+Alternatively, you can download the zip file of the repository at the top of the main page of the repository. 
+If you prefer not to use git or don't have experience with it, this a good option.
 
 ## 2. Download Anaconda (if you haven't already)
 
-If you do not already have the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3, go get it (note: you can also set up your project environment w/out Anaconda using `pip` to install the required packages; however Anaconda is great for Data Science and we encourage you to use it).
+If you do not already have the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3, 
+go get it 
+(note: you can also set up your project environment w/out Anaconda using `pip` to install the required packages; 
+however Anaconda is great for Data Science and we encourage you to use it).
 
 ## 3. Set up your environment
 
 ### 3a. `conda` users
 
-If this is the first time you're setting up your compute environment, use the `conda` package manager to **install all the necessary packages** from the provided `environment.yml` file.
+If this is the first time you're setting up your compute environment, 
+use the `conda` package manager 
+to **install all the necessary packages** 
+from the provided `environment.yml` file.
 
 ```bash
 conda env create -f environment.yml
@@ -57,7 +64,8 @@ conda env update -f environment.yml
 
 ### 3b. `pip` users
 
-Please install all of the packages listed in the `environment.yml` file manually. An example command would be:
+Please install all of the packages listed in the `environment.yml` file manually. 
+An example command would be:
 
 ```bash
 pip install networkx scipy ...
@@ -74,16 +82,19 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 In the terminal, execute `jupyter notebook`.
 
-Navigate to the notebooks directory and open the notebook 01-Student-Probability_a_simulated_introduction.ipynb.
+Navigate to the notebooks directory 
+and open the notebook `01-Student-Probability_a_simulated_introduction.ipynb`.
 
 ### 4b. Open your Jupyter notebook in Jupyter Lab!
 
 
 In the terminal, execute `jupyter lab`.
 
-Navigate to the notebooks directory and open the notebook 01-Student-Probability_a_simulated_introduction.ipynb.
+Navigate to the notebooks directory 
+and open the notebook `01-Student-Probability_a_simulated_introduction.ipynb`.
 
-Now, if you're using Jupyter lab, for Notebook 2, you'll need to get ipywidgets working. The documentation is [here](https://ipywidgets.readthedocs.io/en/latest/user_install.html#installing-the-jupyterlab-extension).
+Now, if you're using Jupyter lab, for Notebook 2, you'll need to get ipywidgets working. 
+The documentation is [here](https://ipywidgets.readthedocs.io/en/latest/user_install.html#installing-the-jupyterlab-extension).
 
 In short, you'll need node installed & you'll need to run the following in your terminal:
 
@@ -95,7 +106,8 @@ Launch Binder using the button at the top of this README.md. Voila!
 
 ### 4d. Want to view static HTML notebooks
 
-If you're interested in only viewing the static HTML versions of the notebooks, the links are provided below:
+If you're interested in only viewing the static HTML versions of the notebooks, 
+the links are provided below:
 
 Part 1: Bayesian Data Science by Simulation
 
@@ -114,11 +126,20 @@ Part 2: Bayesian Data Science by Probabilistic Programming
 
 # Acknowledgements
 
-Development of this type of material is almost always a result of years of discussions between members of a community. We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: Michael Betancourt, Justin Bois, Allen Downey, Chris Fonnesbeck, Jake VanderPlas. Also, Andrew Gelman rocks!
+Development of this type of material is almost always a result of years of discussions between members of a community. 
+We'd like to thank the community and to mention several people who have played pivotal roles in our understanding the the material: 
+Michael Betancourt, 
+Justin Bois, 
+Allen Downey, 
+Chris Fonnesbeck, 
+Jake VanderPlas. 
+Also, Andrew Gelman rocks!
+
 
 # Feedback
 
-Please leave feedback for us [here](https://ericma1.typeform.com/to/j88n8P)! We'll use this information to help improve the teaching and delivery of the material.
+Please leave feedback for us [here](https://ericma1.typeform.com/to/j88n8P)! 
+We'll use this information to help improve the teaching and delivery of the material.
 
 # data credits
 
@@ -131,3 +152,4 @@ Further reading resources that are not specifically tied to any notebooks.
 - [Visualization in Bayesian workflow](https://arxiv.org/abs/1709.01449)
 - [PyMC3 examples gallery](http://docs.pymc.io/examples.html)
 - [Bayesian Analysis Recipes](https://github.com/ericmjl/bayesian-analysis-recipes)
+- [Communicating uncertainty about facts, numbers and science](https://royalsocietypublishing.org/doi/full/10.1098/rsos.181870)
