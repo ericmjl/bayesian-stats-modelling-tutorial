@@ -28,3 +28,6 @@ dependencies:
 - arviz
 - theano>=1.0.4
 - ipykernel
+- hvplot
+- bokeh
+- holoviews
