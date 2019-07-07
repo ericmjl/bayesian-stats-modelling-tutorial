@@ -1,7 +1,7 @@
 name: bayesian-modelling-tutorial
 channels:
-- defaults
 - conda-forge
+- defaults
 - ericmjl
 dependencies:
 - python=3.7
@@ -10,7 +10,7 @@ dependencies:
 - pip
 - seaborn
 - matplotlib
-- numpy
+- numpy>=1.16
 - scipy
 - pandas
 - jupyterlab

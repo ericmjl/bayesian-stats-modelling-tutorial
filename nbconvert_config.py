@@ -56,9 +56,6 @@ import os
 #  positionally will be added to the list.
 c.NbConvertApp.notebooks = [
     "notebooks/*-instructor-*.ipynb",
-    "notebooks/*-Instructor-*.ipynb",
-    "notebooks/08-bayesian-curve-regression.ipynb",
-    "notebooks/*bonus*.ipynb",
 ]
 
 ## overwrite base name use for output files. can only be used when converting one
