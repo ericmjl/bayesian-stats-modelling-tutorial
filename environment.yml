@@ -25,7 +25,9 @@ dependencies:
 - black
 - nbstripout
 - pylint
+- arviz
 - theano>=1.0.4
 - ipykernel
-- pip:
-  - arviz
+- hvplot
+- bokeh
+- holoviews
