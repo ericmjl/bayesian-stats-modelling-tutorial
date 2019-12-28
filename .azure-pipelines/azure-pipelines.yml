@@ -33,19 +33,19 @@ jobs:
       - template: templates/setup-script-nix.yml
       - template: templates/nb-docs-nix.yml
 
-  - job: windows
-    strategy:
-      matrix:
-        py37:
-          python.version: "3.7"
-        py36:
-          python.version: "3.6"
-    pool:
-      vmImage: vs2017-win2016
-    steps:
-      # https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/anaconda?view=azure-devops&tabs=vs2017
-      - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
-        displayName: Add conda to PATH
+#   - job: windows
+#     strategy:
+#       matrix:
+#         py37:
+#           python.version: "3.7"
+#         py36:
+#           python.version: "3.6"
+#     pool:
+#       vmImage: vs2017-win2016
+#     steps:
+#       # https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/anaconda?view=azure-devops&tabs=vs2017
+#       - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
+#         displayName: Add conda to PATH
 
-      - template: templates/setup-script-win.yml
-      - template: templates/nb-docs-win.yml
+#       - template: templates/setup-script-win.yml
+#       - template: templates/nb-docs-win.yml
