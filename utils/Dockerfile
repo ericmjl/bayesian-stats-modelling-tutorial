@@ -1,5 +1,7 @@
 ##### INSTRUCTIONS TO USE #####
-# Move this to the base directory of the repo
+# Move this file
+# and the .dockerignore file
+# to the base directory of the repo
 # before using Docker to build the container.
 # This file was moved into `utils/`
 # because it was overriding the original
