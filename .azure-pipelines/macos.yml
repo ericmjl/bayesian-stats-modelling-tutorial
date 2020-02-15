@@ -15,7 +15,7 @@ steps:
 
 # - script: |
 #     # Install Python, py.test, and required packages.
-#     conda env create -f environment.yml
+#     conda env create -f binder/environment.yml
 #     source activate bayesian-modelling-tutorial
 #     conda install -y python=$(python.version)
 #     python -m ipykernel install --user --name bayesian-modelling-tutorial

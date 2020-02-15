@@ -1,13 +1,3 @@
-##### INSTRUCTIONS TO USE #####
-# Move this file
-# and the .dockerignore file
-# to the base directory of the repo
-# before using Docker to build the container.
-# This file was moved into `utils/`
-# because it was overriding the original
-# conda environment-based build using `environment.yml`.
-##### END INSTRUCTIONS #####
-
 # Base image: miniconda3
 FROM continuumio/miniconda3
 
@@ -15,7 +5,7 @@ FROM continuumio/miniconda3
 RUN apt-get install build-essential -y
 
 # Install environment
-COPY ./environment.yml /environment.yml
+COPY ./binder/environment.yml /environment.yml
 RUN conda env create -f /environment.yml
 RUN rm /environment.yml
 

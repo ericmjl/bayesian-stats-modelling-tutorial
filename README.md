@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
 
 # bayesian-stats-modelling-tutorial
 
@@ -41,7 +41,7 @@ to **install all the necessary packages**
 from the provided `environment.yml` file.
 
 ```bash
-conda env create -f environment.yml
+conda env create -f binder/environment.yml
 ```
 
 To **activate the environment**, use the `conda activate` command.
@@ -59,7 +59,7 @@ source activate bayesian-modelling-tutorial
 To **update the environment** based on the `environment.yml` specification file, use the `conda update` command.
 
 ```bash
-conda env update -f environment.yml
+conda env update -f binder/environment.yml
 ```
 
 ### 3b. `pip` users
@@ -75,7 +75,7 @@ pip install networkx scipy ...
 
 If you don't want to mess around with dev-ops, click the following badge to get a Binder session on which you can compute and write code.
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
 
 
 ### 4a. Open your Jupyter notebook
