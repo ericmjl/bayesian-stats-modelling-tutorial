@@ -41,7 +41,7 @@ to **install all the necessary packages**
 from the provided `environment.yml` file.
 
 ```bash
-conda env create -f environment.yml
+conda env create -f binder/environment.yml
 ```
 
 To **activate the environment**, use the `conda activate` command.
@@ -59,7 +59,7 @@ source activate bayesian-modelling-tutorial
 To **update the environment** based on the `environment.yml` specification file, use the `conda update` command.
 
 ```bash
-conda env update -f environment.yml
+conda env update -f binder/environment.yml
 ```
 
 ### 3b. `pip` users
