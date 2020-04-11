@@ -12,11 +12,10 @@ If you're looking for the material for a specific conference tutorial, navigate 
 
 To get started, first identify whether you:
 
-0. Would like to run the tutorial material on servers hosted elsewhere, to avoid installation.
-1. Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python), or if you
-2. Prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or if you
-3. Do not want to mess around with dev-ops.
-4. Only want to view the website version of the notebooks.
+- Would like to run the tutorial material on servers hosted elsewhere, to avoid installation,
+- Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python),
+- Prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or
+- Only want to view the website version of the notebooks.
 
 
 ## 0. Run the tutorial material on servers elsewhere
