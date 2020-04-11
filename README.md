@@ -1,17 +1,28 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
-
 # bayesian-stats-modelling-tutorial
 
-How to do Bayesian statistical modelling using numpy and PyMC3
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
+
+How to do Bayesian statistical modelling using numpy and PyMC3.
+
+# for conference tutorial attendees
+
+If you're looking for the material for a specific conference tutorial, navigate to the notebooks directory and look for a subdirectory for the conference you're interested. For example, `notebooks/ODSC-East-2020-04-14` contains the material for [Hugo's ODSC East tutorial on April 14, 2020](https://odsc.com/speakers/bayesian-data-science-probabilistic-programming/).
 
 # getting started
 
 To get started, first identify whether you:
 
-1. Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python), or if you
-2. prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or if you
-3. Do not want to mess around with dev-ops.
-4. Only want to view the website version of the notebooks.
+- Would like to run the tutorial material on servers hosted elsewhere, to avoid installation,
+- Prefer to use the `conda` package manager (which ships with the Anaconda distribution of Python),
+- Prefer to use `pipenv`, which is a package authored by Kenneth Reitz for package management with `pip` and `virtualenv`, or
+- Only want to view the website version of the notebooks.
+
+
+## To run the tutorial material on servers elsewhere
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
+
+To do this, click on the [Binder](https://mybinder.readthedocs.io/en/latest/) badge above. This will spin up the necessary computational environment for you so you can write and execute Python code from the comfort of your browser. It is a free service. Due to this, the resources are not guaranteed, though they usually work well. If you want as close to a guarantee as possible, follow the instructions below to set up your computational environment locally (that is, on your own computer).
 
 ## 1. Clone the repository locally
 
