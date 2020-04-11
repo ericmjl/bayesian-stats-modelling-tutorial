@@ -19,7 +19,7 @@ To get started, first identify whether you:
 4. Only want to view the website version of the notebooks.
 
 
-# 0. Run the tutorial material on servers elsewhere
+## 0. Run the tutorial material on servers elsewhere
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
 
