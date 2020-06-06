@@ -17,12 +17,16 @@ theme:
 # in which pages show up.
 nav:
   - Bayesian Stats Modelling Tutorial:
-      - Welcome: index.md
+    - Welcome: index.md
+  - Preliminaries:
+    - Probability Distributions: "basics/probability-distributions.ipynb"
+  - Resources:
+    - Glossary: "glossary.md"
 
 plugins:
   - search
   - mknotebooks:
-      execute: true
+      execute: false
       write_markdown: true
       allow_errors: true
       timeout: 1200
