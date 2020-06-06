@@ -1,5 +1,5 @@
 site_name: Bayesian Stats Modelling Tutorial
-site_url: ericmjl.github.io/bayesian-stats-modelling-tutorial
+site_url: https://ericmjl.github.io/bayesian-stats-modelling-tutorial
 
 theme:
   name: "material"

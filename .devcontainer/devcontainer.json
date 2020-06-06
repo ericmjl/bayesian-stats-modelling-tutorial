@@ -18,7 +18,12 @@
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
-		5959
+		5959,
+		8000,
+		8888,
+		8889,
+		8890,
+		8891,
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "python --version",

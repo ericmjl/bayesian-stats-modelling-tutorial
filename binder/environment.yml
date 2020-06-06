@@ -34,3 +34,7 @@ dependencies:
 - holoviews=1.12.5
 - mkl=2019.4
 - mkl-service=2.2.0
+- pip:
+  - mkdocs
+  - mkdocs-material
+  - mknotebooks
