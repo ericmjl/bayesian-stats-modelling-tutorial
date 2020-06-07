@@ -35,6 +35,7 @@ dependencies:
 - mkl=2019.4
 - mkl-service=2.2.0
 - pre-commit
+- networkx=2.4
 - pip:
   - mkdocs
   - mkdocs-material
