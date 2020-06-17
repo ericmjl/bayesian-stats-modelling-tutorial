@@ -102,3 +102,4 @@ ENV/
 
 # Custom
 *.md.tmp
+.vscode/*

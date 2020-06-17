@@ -19,7 +19,8 @@ nav:
   - Bayesian Stats Modelling Tutorial:
     - Welcome: index.md
   - Preliminaries:
-    - Probability Distributions: "basics/probability-distributions.ipynb"
+    - Probability Distributions: "basics/probability.ipynb"
+    - Statistical Simulation: "basics/simulation.ipynb"
   - Resources:
     - Glossary: "glossary.md"
 
