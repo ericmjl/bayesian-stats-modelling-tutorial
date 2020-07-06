@@ -91,7 +91,13 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 ### 4a. Open your Jupyter notebook
 
-In the terminal, execute `jupyter notebook`.
+1. You will have to install a new IPython kernelspec if you created a new conda environment with `binder/environment.yml`.
+
+```bash
+python -m ipykernel install --user --name bayesian-modelling-tutorial --display-name "Python (bayesian-modelling-tutorial)"
+```
+
+2. In the terminal, execute `jupyter notebook`.
 
 Navigate to the notebooks directory 
 and open the notebook `01-Student-Probability_a_simulated_introduction.ipynb`.
