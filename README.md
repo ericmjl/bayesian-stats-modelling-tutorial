@@ -161,6 +161,6 @@ Please see individual notebooks for dataset attribution.
 Further reading resources that are not specifically tied to any notebooks.
 
 - [Visualization in Bayesian workflow](https://arxiv.org/abs/1709.01449)
-- [PyMC3 examples gallery](http://docs.pymc.io/examples.html)
+- [PyMC3 examples gallery](https://docs.pymc.io/nb_examples/index.html)
 - [Bayesian Analysis Recipes](https://github.com/ericmjl/bayesian-analysis-recipes)
 - [Communicating uncertainty about facts, numbers and science](https://royalsocietypublishing.org/doi/full/10.1098/rsos.181870)
