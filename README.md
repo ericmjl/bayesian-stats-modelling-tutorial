@@ -95,7 +95,6 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 ```bash
 python -m ipykernel install --user --name bayesian-modelling-tutorial --display-name "Python (bayesian-modelling-tutorial)"
-```
 
 2. In the terminal, execute `jupyter notebook`.
 
