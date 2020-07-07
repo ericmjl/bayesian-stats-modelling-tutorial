@@ -96,6 +96,7 @@ If you don't want to mess around with dev-ops, click the following badge to get 
     python -m ipykernel install --user --name bayesian-modelling-tutorial --display-name "Python (bayesian-modelling-tutorial)"
 
 You can change the `--display-name` to anything you want, though if you leave it out, the kernel's display name will default to the value passed to the `--name` flag.
+
 2. In the terminal, execute `jupyter notebook`.
 
 Navigate to the notebooks directory 
