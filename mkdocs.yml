@@ -18,9 +18,13 @@ theme:
 nav:
   - Bayesian Stats Modelling Tutorial:
     - Welcome: index.md
-  - Preliminaries:
+  - Basics:
     - Probability Distributions: "basics/probability.ipynb"
     - Statistical Simulation: "basics/simulation.ipynb"
+    - Basic Inference: "basics/inference.ipynb"
+  - Intermediate Topics:
+    - Multi-Group Estimation: "intermediate/estimation.ipynb"
+    - Hierarchical Modelling: "intermediate/hierarchical.ipynb"
   - Resources:
     - Glossary: "glossary.md"
 

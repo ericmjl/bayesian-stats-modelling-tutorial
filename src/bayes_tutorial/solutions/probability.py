@@ -1,5 +1,45 @@
-from scipy.stats import bernoulli
+from scipy.stats import bernoulli, binom, multinomial
 import numpy as np
+
+
+def coin_distribution():
+    return {
+        "H": 1 / 3,
+        "T": 2 / 3,
+    }
+
+
+def test_coin_distribution():
+    cred_points = coin_distribution().values()
+    assert np.allclose(sum(cred_points), 1)
+
+
+def dice_distribution():
+    return {
+        1: 1 / 6,
+        2: 1 / 6,
+        3: 1 / 6,
+        4: 1 / 6,
+        5: 1 / 6,
+        6: 1 / 6,
+    }
+
+
+def test_dice_distribution():
+    cred_points = dice_distribution().values()
+    assert np.allclose(sum(cred_points), 1)
+
+
+def binomial_answer():
+    binomial_dist = binom(n=1, p=0.8)
+    draws = binomial_dist.rvs(10)
+    return draws
+
+
+def multinomial_answer():
+    multinomial_dist = multinomial(n=1, p=[1 / 6] * 6)
+    draws = multinomial_dist.rvs(10)
+    return draws
 
 
 def likelihood_coin_toss():

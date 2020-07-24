@@ -36,6 +36,8 @@ dependencies:
 - pre-commit
 - networkx
 - mamba
+- pyprojroot
+- faker
 - pip:
   - mkdocs
   - mkdocs-material
