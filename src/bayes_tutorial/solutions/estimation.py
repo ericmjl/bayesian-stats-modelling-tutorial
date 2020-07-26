@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from pyprojroot import here
 import pymc3 as pm
+import arviz as az
 
 
 def naive_estimate(data):
@@ -45,7 +46,7 @@ def posterior_quantile(trace, q):
     return trace_reshaped.quantile(q=q, dim="draws").to_dataframe()
 
 
-def trace_all_stores():
+def trace_all_stores(data):
     with ice_cream_store_model(data):
         trace = pm.sample(2000)
         trace = az.from_pymc3(trace, coords={"p_dim_0": data["shopname"]})
@@ -57,16 +58,26 @@ from daft import PGM
 
 def ice_cream_one_group_pgm():
     G = PGM()
+    G.add_node("alpha", content=r"$\alpha$", x=-1, y=1, scale=1.2, fixed=True)
+    G.add_node("beta", content=r"$\beta$", x=1, y=1, scale=1.2, fixed=True)
+
     G.add_node("p", content="p", x=0, y=1, scale=1.2)
-    G.add_node("likes", content="likes", x=0, y=0, scale=1.2)
+    G.add_node("likes", content="l", x=0, y=0, scale=1.2, observed=True)
+    G.add_edge("alpha", "p")
+    G.add_edge("beta", "p")
     G.add_edge("p", "likes")
     G.show()
 
 
 def ice_cream_n_group_pgm():
     G = PGM()
-    G.add_node("p", content="p", x=0, y=1, scale=1.2)
-    G.add_node("likes", content="likes", x=0, y=0, scale=1.2)
+    G.add_node("alpha", content=r"$\alpha$", x=-1, y=1, scale=1.2, fixed=True)
+    G.add_node("beta", content=r"$\beta$", x=1, y=1, scale=1.2, fixed=True)
+
+    G.add_node("p", content=r"$p_{i}$", x=0, y=1, scale=1.2)
+    G.add_node("likes", content=r"$l_{i}$", x=0, y=0, scale=1.2, observed=True)
+    G.add_edge("alpha", "p")
+    G.add_edge("beta", "p")
     G.add_edge("p", "likes")
-    G.add_plate([-0.5, 1.4, 1, -1.8], label="n_shops")
+    G.add_plate([-0.5, -0.8, 1, 2.3], label=r"shop $i$")
     G.show()

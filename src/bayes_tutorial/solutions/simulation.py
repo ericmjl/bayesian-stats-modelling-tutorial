@@ -7,8 +7,12 @@ from daft import PGM
 
 def coin_flip_pgm():
     G = PGM()
+    G.add_node("alpha", content=r"$\alpha$", x=-1, y=1, scale=1.2, fixed=True)
+    G.add_node("beta", content=r"$\beta$", x=1, y=1, scale=1.2, fixed=True)
     G.add_node("p", content="p", x=0, y=1, scale=1.2)
-    G.add_node("result", content="result", x=0, y=0, scale=1.2)
+    G.add_node("result", content="result", x=0, y=0, scale=1.2, observed=True)
+    G.add_edge("alpha", "p")
+    G.add_edge("beta", "p")
     G.add_edge("p", "result")
     G.show()
 
