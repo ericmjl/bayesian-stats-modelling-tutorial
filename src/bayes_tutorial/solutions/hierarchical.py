@@ -164,3 +164,39 @@ def hierarchical_pgm():
     )
 
     G.render()
+
+
+import pymc3 as pm
+
+
+def ice_cream_hierarchical_model(data):
+    """Hierarchical model for ice cream shops"""
+    n_owners = len(data["owner_idx"].unique())
+    with pm.Model() as model:
+        logit_p_overall = pm.Normal("logit_p_overall", mu=0, sigma=1)
+        logit_p_owner_mean = pm.Normal(
+            "logit_p_owner_mean",
+            mu=logit_p_overall,
+            sigma=1,
+            shape=(n_owners,),
+        )
+        logit_p_owner_scale = pm.Exponential(
+            "logit_p_owner_scale", lam=1 / 5.0, shape=(n_owners,)
+        )
+        logit_p_shop = pm.Normal(
+            "logit_p_shop",
+            mu=logit_p_owner_mean[data["owner_idx"]],
+            sigma=logit_p_owner_scale[data["owner_idx"]],
+            shape=(len(data),),
+        )
+
+        p_overall = pm.Deterministic("p_overall", pm.invlogit(logit_p_overall))
+        p_shop = pm.Deterministic("p_shop", pm.invlogit(logit_p_shop))
+        p_owner = pm.Deterministic("p_owner", pm.invlogit(logit_p_owner_mean))
+        like = pm.Binomial(
+            "like",
+            n=data["num_customers"],
+            p=p_shop,
+            observed=data["num_favs"],
+        )
+    return model
