@@ -64,7 +64,6 @@ def convoluted_hierarchical_p():
 
 
 import matplotlib.pyplot as plt
-from ipywidgets import interact, FloatSlider
 from scipy.stats import norm
 from scipy.special import expit
 import numpy as np
