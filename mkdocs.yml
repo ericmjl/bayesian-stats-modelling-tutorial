@@ -25,13 +25,17 @@ nav:
   - Intermediate Topics:
     - Multi-Group Estimation: "intermediate/estimation.ipynb"
     - Hierarchical Modelling: "intermediate/hierarchical.ipynb"
+    - MCMC Sampling BTS: "intermediate/sampling.ipynb"
+  - Advanced Topics:
+    - Reparametrization: "advanced/reparametrization.ipynb"
+    - MCMC Diagnostics: "advanced/diagnostics.ipynb"
   - Resources:
     - Glossary: "glossary.md"
 
 plugins:
   - search
   - mknotebooks:
-      execute: false
+      execute: true
       write_markdown: true
       allow_errors: true
       timeout: 1200
