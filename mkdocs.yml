@@ -1,0 +1,70 @@
+site_name: Bayesian Stats Modelling Tutorial
+site_url: https://ericmjl.github.io/bayesian-stats-modelling-tutorial
+
+theme:
+  name: "material"
+  palette:
+    primary: "yellow"
+    accent: "yellow"
+  icon:
+    logo: "fontawesome/solid/book"
+  features:
+    - instant
+    - tabs
+  language: en
+
+# We customize the navigation by hand to control the order
+# in which pages show up.
+nav:
+  - Bayesian Stats Modelling Tutorial:
+    - Welcome: index.md
+  - Basics:
+    - Probability Distributions: "basics/probability.ipynb"
+    - Statistical Simulation: "basics/simulation.ipynb"
+    - Basic Inference: "basics/inference.ipynb"
+  - Intermediate Topics:
+    - Multi-Group Estimation: "intermediate/estimation.ipynb"
+    - Hierarchical Modelling: "intermediate/hierarchical.ipynb"
+    - MCMC Sampling BTS: "intermediate/sampling.ipynb"
+  - Advanced Topics:
+    - Reparametrization: "advanced/reparametrization.ipynb"
+    - MCMC Diagnostics: "advanced/diagnostics.ipynb"
+  - Resources:
+    - Glossary: "glossary.md"
+
+plugins:
+  - search
+  - mknotebooks:
+      execute: true
+      write_markdown: true
+      allow_errors: true
+      timeout: 1200
+
+# Taken from here: https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.attr_list
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# extra_css:
+#   - css/nb_mods.css
+#   - css/apidocs.css
+
+# repo_name: null
+# repo_url: null
+
+extra:
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/ericmjl"
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/ericmjl"
+    - icon: "fontawesome/brands/linkedin"
+      link: "https://linkedin.com/in/ericmjl"
