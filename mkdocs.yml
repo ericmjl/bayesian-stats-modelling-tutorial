@@ -20,7 +20,7 @@ nav:
     - Welcome: index.md
   - Basics:
     - Probability Distributions: "basics/probability.ipynb"
-    - Statistical Simulation: "basics/simulation.ipynb"
+    - Statistical Simulation: "basics/probabilistic_stories.ipynb"
     - Basic Inference: "basics/inference.ipynb"
   - Intermediate Topics:
     - Multi-Group Estimation: "intermediate/estimation.ipynb"
