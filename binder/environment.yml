@@ -5,9 +5,9 @@ channels:
 - anaconda
 - ericmjl
 dependencies:
-- python=3.7
+- python>=3.8
 - jupyter
-- jupyterlab
+- jupyterlab>=3.0
 - pymc3
 - pip
 - seaborn
