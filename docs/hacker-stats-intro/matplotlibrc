@@ -1,0 +1,5 @@
+axes.spines.left   : True   # display axis spines
+axes.spines.bottom : True
+axes.spines.top    : False
+axes.spines.right  : False
+
