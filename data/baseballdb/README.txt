@@ -10,13 +10,11 @@ Chadwick Baseball Bureau (http://www.chadwick-bureau.com),
 from its Register of baseball personnel.
 
 Player performance data for 1871 through 2014 is based on the
-Lahman Baseball Database, version 2015-01-24, which is 
+Lahman Baseball Database, version 2015-01-24, which is
 Copyright (C) 1996-2015 by Sean Lahman.
 
 The tables Parks.csv and HomeGames.csv are based on the game logs
 and park code table published by Retrosheet.
 This information is available free of charge from and is copyrighted
-by Retrosheet.  Interested parties may contact Retrosheet at 
+by Retrosheet.  Interested parties may contact Retrosheet at
 http://www.retrosheet.org.
-
-
