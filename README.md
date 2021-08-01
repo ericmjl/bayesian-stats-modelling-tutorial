@@ -170,3 +170,4 @@ Further reading resources that are not specifically tied to any notebooks.
 - [PyMC3 examples gallery](https://docs.pymc.io/nb_examples/index.html)
 - [Bayesian Analysis Recipes](https://github.com/ericmjl/bayesian-analysis-recipes)
 - [Communicating uncertainty about facts, numbers and science](https://royalsocietypublishing.org/doi/full/10.1098/rsos.181870)
+- [Bernoulli's Fallacy by Aubrey Clayton](https://cup.columbia.edu/book/bernoullis-fallacy/9780231199940)
