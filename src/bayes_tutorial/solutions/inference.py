@@ -14,7 +14,22 @@ def plot_betadist_pdf(a, b):
 
 
 def coin_flip_data():
-    return np.array([1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1,])
+    return np.array(
+        [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+        ]
+    )
 
 
 def car_crash_data():
