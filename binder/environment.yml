@@ -24,6 +24,7 @@ dependencies:
 - pandoc
 - black
 - nbstripout
+- "python-graphviz"
 - pylint
 - arviz
 - theano
