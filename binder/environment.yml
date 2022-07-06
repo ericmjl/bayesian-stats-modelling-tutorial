@@ -43,4 +43,5 @@ dependencies:
   - mkdocs-material
   - mknotebooks
   - daft
+  - gapminder
   # Need to add pip install from github for repo, so solutions can be executed.
