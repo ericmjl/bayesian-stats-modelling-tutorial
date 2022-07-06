@@ -36,6 +36,7 @@ dependencies:
 - pre-commit
 - networkx
 - mamba
+- "python-graphviz"
 - pyprojroot
 - faker
 - pip:
