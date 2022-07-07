@@ -8,7 +8,7 @@ dependencies:
 - python>=3.8
 - jupyter
 - jupyterlab>=3.0
-- pymc3
+- pymc=4.0
 - pip
 - seaborn
 - matplotlib
@@ -24,7 +24,6 @@ dependencies:
 - pandoc
 - black
 - nbstripout
-- "python-graphviz"
 - pylint
 - arviz
 - theano
@@ -37,6 +36,7 @@ dependencies:
 - pre-commit
 - networkx
 - mamba
+- "python-graphviz"
 - pyprojroot
 - faker
 - pip:
@@ -44,4 +44,5 @@ dependencies:
   - mkdocs-material
   - mknotebooks
   - daft
+  - gapminder
   # Need to add pip install from github for repo, so solutions can be executed.
