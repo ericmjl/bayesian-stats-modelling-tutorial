@@ -1,3 +1,5 @@
+If you're taking this tutorial at SciPy 2022, please pull the repository 9am CT the day of the tutorial to make sure that you have the most recent version!
+
 # bayesian-stats-modelling-tutorial
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ericmjl/bayesian-stats-modelling-tutorial/master)
