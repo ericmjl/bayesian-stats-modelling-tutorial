@@ -54,7 +54,7 @@ to **install all the necessary packages**
 from the provided `environment.yml` file.
 
 ```bash
-conda env create -f binder/environment.yml
+conda env create -f environment.yml
 ```
 
 To **activate the environment**, use the `conda activate` command.
@@ -72,7 +72,7 @@ source activate bayesian-modelling-tutorial
 To **update the environment** based on the `environment.yml` specification file, use the `conda update` command.
 
 ```bash
-conda env update -f binder/environment.yml
+conda env update -f environment.yml
 ```
 
 ### 3b. `pip` users
@@ -93,7 +93,7 @@ If you don't want to mess around with dev-ops, click the following badge to get 
 
 ### 4a. Open your Jupyter notebook
 
-1. You will have to install a new IPython kernelspec if you created a new conda environment with `binder/environment.yml`.
+1. You will have to install a new IPython kernelspec if you created a new conda environment with `environment.yml`.
 
     python -m ipykernel install --user --name bayesian-modelling-tutorial --display-name "Python (bayesian-modelling-tutorial)"
 
