@@ -18,7 +18,7 @@ ARG USER_GID=$USER_UID
 
 # Copy environment.yml (if found) to a temp locaition so we update the environment. Also
 # copy "noop.txt" so the COPY instruction does not fail if no environment.yml exists.
-COPY binder/environment.yml* .devcontainer/noop.txt /tmp/conda-tmp/
+COPY environment.yml* .devcontainer/noop.txt /tmp/conda-tmp/
 
 # Configure apt and install packages
 RUN apt-get update \
