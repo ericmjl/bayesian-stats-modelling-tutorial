@@ -37,7 +37,7 @@ README CONTENTS
 2.18 AwardsPlayers table
 2.19 AwardsShareManagers table
 2.20 AwardsSharePlayers table
-2.21 FieldingPost table 
+2.21 FieldingPost table
 2.22 Appearances table
 2.23 Schools table
 2.24 SchoolsPlayers table
@@ -47,7 +47,7 @@ README CONTENTS
 
 0.1 Copyright Notice & Limited Use License
 
-This database is copyright 1996-2015 by Sean Lahman. 
+This database is copyright 1996-2015 by Sean Lahman.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License. For details see: http://creativecommons.org/licenses/by-sa/3.0/
 
@@ -62,7 +62,7 @@ at: seanlahman@gmail.com
 Web site: http://www.baseball1.com
 E-Mail : seanlahman@gmail.com
 
-If you're interested in contributing to the maintenance of this 
+If you're interested in contributing to the maintenance of this
 database or making suggestions for improvement, please consider
 joining our mailinglist at:
 
@@ -78,16 +78,16 @@ This release of the database can be downloaded in several formats. The
 contents of each version are listed below.
 
 MS Access Versions:
-      lahman2014.mdb 
-      2014readme.txt 
+      lahman2014.mdb
+      2014readme.txt
 
 SQL version
       lahman2043.sql
       lahman2014_tables.sql
-      2014readme.txt 
-	  
+      2014readme.txt
+
 Comma Delimited Version:
-      2014readme.txt     
+      2014readme.txt
       AllStarFull.csv
       Appearances.csv
       AwardsManagers.csv
@@ -118,9 +118,9 @@ Comma Delimited Version:
 
 This database contains pitching, hitting, and fielding statistics for
 Major League Baseball from 1871 through 2014.  It includes data from
-the two current leagues (American and National), the four other "major" 
+the two current leagues (American and National), the four other "major"
 leagues (American Association, Union Association, Players League, and
-Federal League), and the National Association of 1871-1875. 
+Federal League), and the National Association of 1871-1875.
 
 This database was created by Sean Lahman, who pioneered the effort to
 make baseball statistics freely available to the general public. What
@@ -139,7 +139,7 @@ the Society for American Baseball Research who have helped us over
 the years.  We strongly urge you to support and join their efforts.
 Please vist their website (www.sabr.org).
 
-If you have any problems or find any errors, please let us know.  Any 
+If you have any problems or find any errors, please let us know.  Any
 feedback is appreciated
 
 ----------------------------------------------------------------------
@@ -154,7 +154,7 @@ They've beenremoved from the batting table starting with this version
 SchoolsPlayers has been replaced with a new table called CollegePlaying.
 This reflects advances in the compilation of this data, largely led by
 Ted Turocy. The old table reported college attendance for major league
-players by listing a start date and end date.  The new version has a 
+players by listing a start date and end date.  The new version has a
 separate record for each year that a player attended.  This allows
 us to better account for players who attended multiple colleges or
 skipped a season, as well as to identify teammates.
@@ -164,28 +164,28 @@ skipped a season, as well as to identify teammates.
 1.3 Acknowledgements
 
 Much of the raw data contained in this database comes from the work of
-Pete Palmer, the legendary statistician, who has had a hand in most 
-of the baseball encylopedias published since 1974. He is largely 
+Pete Palmer, the legendary statistician, who has had a hand in most
+of the baseball encylopedias published since 1974. He is largely
 responsible for bringing the batting, pitching, and fielding data out
 of the dark ages and into the computer era.  Without him, none of this
-would be possible.  For more on Pete's work, please read his own 
+would be possible.  For more on Pete's work, please read his own
 account at: http://sabr.org/cmsfiles/PalmerDatabaseHistory.pdf
 
-Three people have been key contributors to the work that followed, first 
-by taking the raw data and creating a relational database, and later 
+Three people have been key contributors to the work that followed, first
+by taking the raw data and creating a relational database, and later
 by extending the database to make it more accesible to researchers.
 
-Sean Lahman launched the Baseball Archive's website back before 
+Sean Lahman launched the Baseball Archive's website back before
 most people had heard of the world wide web.  Frustrated by the
-lack of sports data available, he led the effort to build a 
-baseball database that everyone could use. Baseball researchers 
+lack of sports data available, he led the effort to build a
+baseball database that everyone could use. Baseball researchers
 everywhere owe him a debt of gratitude.  Lahman served as an associate
 editor for three editions of Total Baseball and contributed to five
 editions of The ESPN Baseball Encyclopedia. He has also been active in
 developing databases for other sports.
 
 The work of Sean Forman to create and maintain an online encyclopedia
-at "baseball-reference.com" has been remarkable. Recognized as the 
+at "baseball-reference.com" has been remarkable. Recognized as the
 premier online reference source, Forman's site provides an oustanding
 interface to the raw data. His efforts to help streamline the database
 have been extremely helpful. Most importantly, Forman has spearheaded
@@ -195,7 +195,7 @@ the Baseball Databank, a forum for researchers to gather and share
 their work.
 
 Since 2001, these two Seans have led a group of researchers
-who volunteered to maintain and update the database. 
+who volunteered to maintain and update the database.
 
 Ted Turocy has done the lion's share of the work to updating the main
 data tables since 2012, including significant imporvements to the
@@ -203,18 +203,18 @@ demographic data in the master table. In his role as SABR data czar,
 he led the effort to document college playing stints for all
 major league players. Turocy also spearheads the Chadwick Baseball
 Bureau. For more details on his tools and services, visit:
-http://chadwick.sourceforge.net/doc/index.html  
+http://chadwick.sourceforge.net/doc/index.html
 
-A handful of researchers have made substantial contributions to 
-maintain this database over years. Listed alphabetically, they 
+A handful of researchers have made substantial contributions to
+maintain this database over years. Listed alphabetically, they
 are: Derek Adair, Mike Crain, Kevin Johnson, Rod Nelson, Tom Tango,
-and Paul Wendt. These folks did much of the heavy lifting, and are 
+and Paul Wendt. These folks did much of the heavy lifting, and are
 largely responsible for the improvements made since 2000.
 
-Others who made important contributions include: Dvd Avins, 
-Clifford Blau, Bill Burgess, Clem Comly, Jeff Burk, Randy Cox, 
+Others who made important contributions include: Dvd Avins,
+Clifford Blau, Bill Burgess, Clem Comly, Jeff Burk, Randy Cox,
 Mitch Dickerman, Paul DuBois, Mike Emeigh, F.X. Flinn, Bill Hickman,
-Jerry Hoffman, Dan Holmes, Micke Hovmoller, Peter Kreutzer, 
+Jerry Hoffman, Dan Holmes, Micke Hovmoller, Peter Kreutzer,
 Danile Levine, Bruce Macleod, Ken Matinale, Michael Mavrogiannis,
 Cliff Otto, Alberto Perdomo, Dave Quinn, John Rickert, Tom Ruane,
 Theron Skyles, Hans Van Slooten, Michael Westbay, and Rob Wood.
@@ -223,36 +223,36 @@ Many other people have made significant contributions to the database
 over the years.  The contribution of Tom Ruane's effort to the overall
 quality of the underlying data has been tremendous. His work at
 retrosheet.org integrates the yearly data with the day-by-day data,
-creating a reference source of startling depth. It is unlikely than 
-any individual has contributed as much to the field of baseball 
+creating a reference source of startling depth. It is unlikely than
+any individual has contributed as much to the field of baseball
 research in the past five years as Ruane has.
 
 Sean Holtz helped with a major overhaul and redesign before the
 2000 season. Keith Woolner was instrumental in helping turn
 a huge collection of stats into a relational database in the mid-1990s.
-Clifford Otto & Ted Nye also helped provide guidance to the early 
+Clifford Otto & Ted Nye also helped provide guidance to the early
 versions. Lee Sinnis, John Northey & Erik Greenwood helped supply key
-pieces of data. Many others have written in with corrections and 
+pieces of data. Many others have written in with corrections and
 suggestions that made each subsequent version even better than what
-preceded it. 
+preceded it.
 
 The work of the SABR Baseball Records Committee, led by Lyle Spatz
-has been invaluable.  So has the work of Bill Carle and the SABR 
+has been invaluable.  So has the work of Bill Carle and the SABR
 Biographical Committee. David Vincent, keeper of the Home Run Log and
 other bits of hard to find info, has always been helpful. The recent
 addition of colleges to player bios is the result of much research by
 members of SABR's Collegiate Baseball committee.
 
 Salary data was first supplied by Doug Pappas, who passed away during
-the summer of 2004. He was the leading authority on many subjects, 
-most significantly the financial history of Major League Baseball. 
-We are grateful that he allowed us to include some of the data he 
-compiled.  His work has been continued by the SABR Business of 
-Baseball committee.  
+the summer of 2004. He was the leading authority on many subjects,
+most significantly the financial history of Major League Baseball.
+We are grateful that he allowed us to include some of the data he
+compiled.  His work has been continued by the SABR Business of
+Baseball committee.
 
 Thanks is also due to the staff at the National Baseball Library
 in Cooperstown who have been so helpful over the years, including
-Tim Wiles, Jim Gates, Bruce Markusen, and the rest of the staff.  
+Tim Wiles, Jim Gates, Bruce Markusen, and the rest of the staff.
 
 A special debt of gratitude is owed to Dave Smith and the folks at
 Retrosheet. There is no other group working so hard to compile and
@@ -268,7 +268,7 @@ a wonderful thing.
 This version of the database is available in Microsoft Access
 format, SQL files or in a generic, comma delimited format. Because this is a
 relational database, you will not be able to use the data in a
-flat-database application. 
+flat-database application.
 
 Please note that this is not a stand alone application.  It requires
 a database application or some other application designed specifically
@@ -277,7 +277,7 @@ to interact with the database.
 If you are unable to import the data directly, you should download the
 database in the delimted text format.  Then use the documentation
 in sections 2.1 through 2.22 of this document to import the data into
-your database application. 
+your database application.
 
 ----------------------------------------------------------------------
 1.5 Revision History
@@ -286,11 +286,11 @@ your database application.
        1.0      December 1992     Database ported from dBase
        1.1      May 1993          Becomes fully relational
        1.2      July 1993         Corrections made to full database
-       1.21     December 1993     1993 statistics added            
-       1.3      July 1994         Pre-1900 data added 
+       1.21     December 1993     1993 statistics added
+       1.3      July 1994         Pre-1900 data added
        1.31     February 1995     1994 Statistics added
        1.32     August 1995       Statistics added for other leagues
-       1.4      September 1995    Fielding Data added 
+       1.4      September 1995    Fielding Data added
        1.41     November 1995     1995 statistics added
        1.42     March 1996        HOF/All-Star tables added
        1.5-MS   October 1996      1st public release - MS Access format
@@ -318,14 +318,14 @@ your database application.
        2013     December 2013     Updated with 2013 season statistics
        2014     December 2014     Updated with 2013 season statistics
 
-	   
+
 
 ------------------------------------------------------------------------------
 2.0 Data Tables
 
 The design follows these general principles.  Each player is assigned a
 unique number (playerID).  All of the information relating to that player
-is tagged with his playerID.  The playerIDs are linked to names and 
+is tagged with his playerID.  The playerIDs are linked to names and
 birthdates in the MASTER table.
 
 The database is comprised of the following main tables:
@@ -340,17 +340,17 @@ It is supplemented by these tables:
   AllStarFull - All-Star appearances
   HallofFame - Hall of Fame voting data
   Managers - managerial statistics
-  Teams - yearly stats and standings 
+  Teams - yearly stats and standings
   BattingPost - post-season batting statistics
   PitchingPost - post-season pitching statistics
   TeamFranchises - franchise information
-  FieldingOF - outfield position data  
+  FieldingOF - outfield position data
   FieldingPost- post-season fieldinf data
   ManagersHalf - split season data for managers
   TeamsHalf - split season data for teams
   Salaries - player salary data
   SeriesPost - post-season series information
-  AwardsManagers - awards won by managers 
+  AwardsManagers - awards won by managers
   AwardsPlayers - awards won by players
   AwardsShareManagers - award voting for manager awards
   AwardsSharePlayers - award voting for player awards
@@ -386,7 +386,7 @@ nameLast       Player's last name
 nameGiven      Player's given name (typically first and middle)
 weight         Player's weight in pounds
 height         Player's height in inches
-bats           Player's batting hand (left, right, or both)         
+bats           Player's batting hand (left, right, or both)
 throws         Player's throwing hand (left or right)
 debut          Date that player made first major league appearance
 finalGame      Date that player made first major league appearance (blank if still active)
@@ -431,7 +431,7 @@ W              Wins
 L              Losses
 G              Games
 GS             Games Started
-CG             Complete Games 
+CG             Complete Games
 SHO            Shutouts
 SV             Saves
 IPOuts         Outs Pitched (innings pitched x 3)
@@ -461,9 +461,9 @@ stint          player's stint (order of appearances within a season)
 teamID         Team
 lgID           League
 Pos            Position
-G              Games 
+G              Games
 GS             Games Started
-InnOuts        Time played in the field expressed as outs 
+InnOuts        Time played in the field expressed as outs
 PO             Putouts
 A              Assists
 E              Errors
@@ -499,7 +499,7 @@ category       Category in which candidate was honored
 needed_note    Explanation of qualifiers for special elections
 ------------------------------------------------------------------------------
 2.7  Managers table
- 
+
 playerID       Player ID Number
 yearID         Year
 teamID         Team
@@ -569,7 +569,7 @@ teamIDretro    Team ID used by Retrosheet
 2.9  BattingPost table
 
 yearID         Year
-round          Level of playoffs 
+round          Level of playoffs
 playerID       Player ID code
 teamID         Team
 lgID           League
@@ -596,7 +596,7 @@ GIDP           Grounded into double plays
 
 playerID       Player ID code
 yearID         Year
-round          Level of playoffs 
+round          Level of playoffs
 teamID         Team
 lgID           League
 W              Wins
@@ -604,7 +604,7 @@ L              Losses
 G              Games
 GS             Games Started
 CG             Complete Games
-SHO             Shutouts 
+SHO             Shutouts
 SV             Saves
 IPOuts         Outs Pitched (innings pitched x 3)
 H              Hits
@@ -686,11 +686,11 @@ salary         Salary
 2.16 SeriesPost table
 
 yearID         Year
-round          Level of playoffs 
+round          Level of playoffs
 teamIDwinner   Team ID of the team that won the series
 lgIDwinner     League ID of the team that won the series
 teamIDloser    Team ID of the team that lost the series
-lgIDloser      League ID of the team that lost the series 
+lgIDloser      League ID of the team that lost the series
 wins           Wins by team that won the series
 losses         Losses by team that won the series
 ties           Tie games
@@ -743,11 +743,11 @@ playerID       Player ID code
 yearID         Year
 teamID         Team
 lgID           League
-round          Level of playoffs 
+round          Level of playoffs
 Pos            Position
-G              Games 
+G              Games
 GS             Games Started
-InnOuts        Time played in the field expressed as outs 
+InnOuts        Time played in the field expressed as outs
 PO             Putouts
 A              Assists
 E              Errors
@@ -800,4 +800,3 @@ year           year
 
 
 <end of file>
-	
